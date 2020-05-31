@@ -1,0 +1,26 @@
+<div class="container">
+  <header><img src="../../../assets/images/image.png" /></header>
+
+  <app-cards></app-cards>
+
+  <app-widget-dropdown-picker
+    [data]="countries$ | async"
+    [label]="'Select Country'"
+    [defaultValue]="''"
+    [defaultValuePlaceholder]="'Global'"
+    (change)="onCountryPickerChange($event)"
+  ></app-widget-dropdown-picker>
+
+
+  <app-widget-area-chart
+  *ngIf="(areaChartData$ | async) && !(selectedCountry$ | async)"
+  [data]="areaChartData$ | async"
+></app-widget-area-chart>
+
+<app-widget-column-chart
+  *ngIf="(columnChartData$ | async) && (selectedCountry$ | async)"
+  [data]="columnChartData$ | async"
+></app-widget-column-chart>
+
+
+</div>

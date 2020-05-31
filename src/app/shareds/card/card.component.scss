@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  min-width: 180px;
+  max-width: 220px;
+  margin: 0 15px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  padding: 16px;
+  border-radius: 5px;
+  &.blue-border-bottom {
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+  }
+  &.green-border-bottom {
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+  }
+  &.red-border-bottom {
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  }
+
+  mat-card {
+    padding: 0;
+    box-shadow: none;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  section {
+    font-size: 0.875rem;
+  }
+}

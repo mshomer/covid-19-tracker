@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-card-content>
+    <p class="mat-typography text-secondary">{{title}}</p>
+    <h5 class="mat-typography"><app-widget-number-tracker [digit]="data" [duration]="1000"></app-widget-number-tracker></h5>
+    <p class="mat-typography text-secondary">{{date | date}}</p>
+    <section class="mat-typography">{{body}}</section>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="d-flex justify-content-center flex-wrap flex-sm-nowrap">
+    <div class="m-1" *ngFor="let card of cards$ | async">
+      <app-widget-card
+        [title]="card.title"
+        [data]="card.data"
+        [date]="card.date"
+        [body]="card.body"
+        [borderBottomColor]="card.borderBottomColor"
+      ></app-widget-card>
+    </div>
+  </div>
+</div>
